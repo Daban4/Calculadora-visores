@@ -184,7 +184,9 @@ if len(dist_arr) >= 2:
         "Distancia (m)": [f"{d:.0f}" for d in d_res],
         "Altura (Clics)": [f"{h:.2f}" for h in a_res]
     })
-    st.dataframe(res_df, use_container_width=True, hide_index=True)
+    # Calculamos la altura justa para que no salgan celdas vacías (35px por fila + cabecera)
+    calc_height = (len(res_df) + 1) * 35 + 3
+    st.dataframe(res_df, use_container_width=True, hide_index=True, height=min(calc_height, 800))
     
     # --- GENERADOR DE PNG ---
     def make_png(p_name, p_method, dr, ar):
