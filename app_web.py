@@ -12,6 +12,11 @@ st.set_page_config(page_title="Calculadora de Visor Pro", layout="wide", page_ic
 
 # --- ESTILOS PERSONALIZADOS (MODO OSCURO PREMIUM LIMPIO) ---
 st.markdown("""
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="mobile-web-app-capable" content="yes">
+    </head>
     <style>
     .main { background-color: #04040c; color: #ffffff; }
     /* Botones Azules por defecto */
