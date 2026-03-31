@@ -8,12 +8,14 @@ import io
 import uuid
 
 # --- CONFIGURACIÓN DE PÁGINA ---
-st.set_page_config(page_title="Calculadora de Visor Pro", layout="wide", page_icon="🎯")
+st.set_page_config(page_title="Calculadora de Visores", layout="wide", page_icon="🎯")
 
 # --- ESTILOS PERSONALIZADOS (MODO OSCURO PREMIUM LIMPIO) ---
 st.markdown("""
     <head>
         <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Calculadora de Visores">
+        <meta name="application-name" content="Calculadora de Visores">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="mobile-web-app-capable" content="yes">
     </head>
